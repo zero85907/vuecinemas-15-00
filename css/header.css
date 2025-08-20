@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header__top {
+  background: linear-gradient(
+    90.09deg,
+    #3800af 0%,
+    #bf7204 97.52%,
+    #c27500 100%,
+    #c27500 100%
+  );
+  padding: 20px 0;
+}
+
+.header__top-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.header__top-slogan-icon {
+  font-size: 50px;
+}
+.header__top-slogan_p {
+  font-family: var(--CR);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  max-width: 166px;
+  width: 100%;
+}
+
+.header__block {
+  background: #010305cc;
+  backdrop-filter: blur(15px);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  color: #fff;
+}
+
+.header__nav-logo span {
+  font-family: var(--CB);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__nav-list_item-link {
+  display: inline-block;
+  position: relative;
+  padding: 42px 0;
+  font-family: var(--MR);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+@media (hover: hover) {
+  .header__nav-list_item-link:hover {
+    color: var(--light);
+  }
+}
+@media (hover: none) {
+  .header__nav-list_item-link:active {
+    color: var(--light);
+  }
+}
+
+.header__nav-list_item-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--light);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: 0.3s;
+  transform: translateX(-50%);
+  border-radius: 23px 23px 0 0;
+}
+.header__nav-list_item-link:hover::after {
+  width: 120%;
+}
+@media (hover: hover) {
+  .header__nav-list_item-link:hover::after {
+    width: 120%;
+  }
+}
+@media (hover: none) {
+  .header__nav-list_item-link:active::after {
+    width: 120%;
+  }
+  .header__nav-list_item-link:not(:active)::after {
+    width: 0%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__nav {
+    flex-direction: column;
+    padding: 42px 0 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header__nav {
+    padding-top: 20px 0;
+  }
+  .header__nav-list {
+    gap: 15px;
+  }
+  .header__nav-list_item-link {
+    padding: 20px 0;
+  }
+}
