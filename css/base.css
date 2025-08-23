@@ -62,3 +62,18 @@ body {
     color: var(--white);
   }
 }
+
+.title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.title__h {
+  font-family: var(--CR);
+  font-weight: 400;
+  font-size: 36px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--orange);
+  color: var(--orange);
+  text-transform: capitalize;
+}

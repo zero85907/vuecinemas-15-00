@@ -1,0 +1,116 @@
+.films {
+  padding: 60px 0 76px;
+}
+
+.films__wrap {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-auto-rows: 366px;
+  gap: 30px;
+}
+
+.films__card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 54px 15px 15px 15px;
+  justify-content: space-between;
+  gap: 38px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.films__card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.films__card-icon {
+  font-size: 40px;
+  color: var(--white);
+}
+
+.films__card-time {
+  background: #070f1933;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  padding: 8px 28px;
+  font-family: var(--MR);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.films__card-buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.films__card-buttom_h {
+  font-family: var(--MR);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: var(--white);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.films__card-buttom_p {
+  font-family: var(--RR);
+  font-weight: 400;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.films__card:nth-child(1) {
+  background: url("../img/film1.png") no-repeat top center/cover;
+}
+.films__card:nth-child(2) {
+  background: url("../img/film2.png") no-repeat top center/cover;
+}
+.films__card:nth-child(3) {
+  background: url("../img/film3.png") no-repeat top center/cover;
+}
+.films__card:nth-child(4) {
+  background: url("../img/film4.png") no-repeat top center/cover;
+}
+
+.films__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 129, 40, 0.35) 0%,
+    rgba(0, 0, 0, 0.71) 51.04%,
+    rgba(7, 15, 25, 0.8) 100%
+  );
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .films__wrap {
+        grid-template-columns: repeat(2, 255px);
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 568px) {
+    .films__wrap {
+        grid-template-columns: 255px;
+    }
+}
