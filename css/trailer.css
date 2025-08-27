@@ -1,0 +1,47 @@
+.trailer {
+  padding: 42px 00 80px;
+  background: linear-gradient(
+    90deg,
+    #def7ff 0%,
+    #f4fcff 45.64%,
+    rgba(255, 255, 255, 0) 100.72%
+  );
+  position: relative;
+}
+
+.trailer__wrap {
+  max-width: 558px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.trailer__video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.trailer__logo {
+  width: 100%;
+}
+.trailer__logo img {
+  width: 100%;
+}
+
+.trailer__desc {
+  font-family: var(--RR);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 27px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
