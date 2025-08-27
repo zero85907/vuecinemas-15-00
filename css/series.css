@@ -1,0 +1,105 @@
+.series {
+  padding: 63px 0;
+}
+
+.series__wrap {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 190px;
+  gap: 30px;
+}
+
+.series__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.series__bg {
+  background: linear-gradient(
+    95.68deg,
+    rgba(35, 35, 35, 0.8) 10.86%,
+    rgba(11, 11, 11, 0.6) 110.86%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
+
+.series__card:nth-child(1) {
+  grid-column: 4 span;
+  grid-row: 2 span;
+  background: url(../img/seriesPost.png) no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.series__card-buttom_h {
+  font-family: var(--CR);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.series__card-buttom_p {
+  font-family: var(--CR);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.series__card:nth-child(2) {
+  grid-column: 2 span;
+  grid-row: 2 span;
+  background: url(../img/series1.png) no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.series__card-buttom_h1 {
+  font-family: var(--CR);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.series__card:nth-child(3) {
+  background: url(../img/series2.png) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.series__card:nth-child(4) {
+  background: url(../img/series3.png) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.series__card:nth-child(5) {
+  background: url(../img/series4.png) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.series__card:nth-child(6) {
+  background: url(../img/series5.png) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
